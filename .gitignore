@@ -1,0 +1,4 @@
+node_modules
+/dist/*
+pkgs.docker-compose_1
+/.idx
