@@ -1,0 +1,28 @@
+# My First GraphQL
+
+Este repositorio contiene un ejemplo básico de un servidor GraphQL implementado con Node.js, Express y Apollo Server. El objetivo de este proyecto es proporcionar una introducción a la creación de APIs con GraphQL.
+
+## Descripción
+
+`my-first-graphql` es un proyecto sencillo que muestra cómo configurar un servidor GraphQL básico, definir esquemas y resolvers, y manejar consultas y mutaciones. Este proyecto es ideal para aquellos que están comenzando a aprender sobre GraphQL y quieren ver un ejemplo práctico en funcionamiento.
+
+## Características
+
+- Configuración de un servidor GraphQL utilizando Apollo Server.
+- Definición de tipos, consultas y mutaciones en GraphQL.
+- Ejemplo de resolvers para manejar las consultas y mutaciones.
+- Integración con Express para la configuración del servidor HTTP.
+
+## Requisitos
+
+- Node.js (versión 12 o superior)
+- npm (versión 6 o superior)
+
+## Instalación
+
+Sigue estos pasos para instalar y ejecutar el proyecto localmente:
+
+1. Clona el repositorio:
+
+   ```sh
+   git clone https://github.com/Wilmer200520t/my-first-graphql.git
