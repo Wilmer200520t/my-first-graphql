@@ -1,6 +1,14 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
 
+/**
+ * Definition Server tools
+ */
+let port: number = parseInt(process.env.PORT || '3000');
+
+/**
+ * Definition Server
+ */
 const typeGraphql = `#graphql
     #Define object query
     type Book{
@@ -22,7 +30,9 @@ const typeGraphql = `#graphql
         deleteBook(id: ID) : Book
     }
 `
-
+/**
+ * Data Base
+ */
 const ObjBooks = [
     {
       id:0,
@@ -36,6 +46,9 @@ const ObjBooks = [
     },
 ];
 
+/**
+ * Resolver from Query and Mutation
+ */
 const resolvers = {
     Query  :{
         books : ()=> ObjBooks,
@@ -62,14 +75,18 @@ const resolvers = {
     }
 }
 
+/**
+ * Start Server
+ */
 const server = new ApolloServer({
     typeDefs: typeGraphql,
-    resolvers
+    resolvers,
+    nodeEnv: 'development',
 });
 
 
 const { url } = await startStandaloneServer(server, {
-    listen : { port: 3000}
+    listen : { port }
 })
 
 console.log(`🚀  Server ready at: ${url}`);

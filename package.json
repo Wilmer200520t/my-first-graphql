@@ -11,9 +11,11 @@
   "license": "ISC",
   "dependencies": {
     "@apollo/server": "^4.10.4",
+    "and": "^0.0.3",
     "ejs": "^3.1.10",
     "graphql": "^16.8.1",
-    "nodemon": "^3.1.0"
+    "npm": "^10.8.1",
+    "start": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
